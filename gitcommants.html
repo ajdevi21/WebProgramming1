@@ -1,0 +1,50 @@
+//If this is the first time you are sending git request from your system, you might want to setup your username by
+git config --global user.name "yourname"
+git config --global user.email example.gmail.com
+
+
+//If the url is not setup run
+git remote set-url origin 
+
+//to verify if your url is setup
+git remote -v
+
+//To Add,commit & push
+git add .
+git commit -m "your message"
+git push origin master
+
+// If Above commants doesn't works then:
+//first your git local repo to backup another folder and your git folder to delete 
+1. 'add a new folder' 
+2. that folder is git folder 'git init' to make git local repo 
+3. 'git clone github.com/www-prolificme-com/mahawiki' to cloning your folder 
+4. backup folder to original git folder 
+5. git add . 
+6. git commit -m "message" 
+7. git push
+
+//still permision error than
+Permission denied error is github ssh key register error, make one of ssh and add on github account 
+
+//How to create ssj
+//Go to Home 
+cd ~
+//Delete your .ssh folder (ASSUMING YOU AREN'T USING ANY KEYS IN THERE!!)
+rm -rf .ssh
+
+https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+//Paste the text below, substituting in your GitHub email address.
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+
+
+D:\>ssh-keygen -t ed25519 -C "asemjoymaladevi@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (C:\Users\asemj/.ssh/id_ed25519): 
+
+
+//To get out from git config --list --show-origin
+colon Shift+Q 
+
+
